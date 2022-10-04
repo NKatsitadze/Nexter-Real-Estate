@@ -1,0 +1,80 @@
+@media only screen and (max-width: 75em) {
+    html {font-size: 50%;}
+    
+}
+
+@media only screen and (max-width: 56.25em) {
+    html {font-size: 45%;}
+    .realtors__img {width: 5.5rem;}
+    .realtors__list {grid-column-gap: 0.5rem;}
+    .homes {grid-gap: 3rem;}
+    
+
+
+}
+ // 700 PX
+@media only screen and (max-width: 43.75em) {
+    html {font-size: 40%;}
+    .container {
+        display: grid;
+        grid-template-rows: 6rem 80vh min-content 40vw min-content min-content min-content ;
+        grid-template-columns:  [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem )[col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    }
+    .sidebar {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        align-items: center;
+    }
+    .main-label {top: 1.2rem; height: 3.5rem; width: 3.5rem; }
+    .span-label,
+    .span-label::before,
+    .span-label::after {
+        width: 2rem;
+        height: 1px;       
+    }
+    .span-label {
+        margin-top: 1.8rem;
+    }
+    .span-label::after {top: 0.3rem;}
+    .span-label::before {top: -0.3rem;}
+
+   
+}
+
+// 600PX
+@media only screen and (max-width: 37.5em) {
+    html {font-size: 37%;}
+    .main-label {background-color: transparent;}
+    .header {grid-column: 1 / -1;}
+    .realtors {grid-column: 1 / -1;}
+    .realtors__list {grid-template-columns: repeat(3, min-content max-content);}
+    .story__pictures {grid-column: 1 / -1; margin-top: 33rem;}
+    .story__content {grid-column: 1 / -1;}
+    .story__img--2 {width: 100%;}
+
+
+}
+
+
+// 550px
+@media only screen and (max-width: 34.375em) {
+    .story__pictures {margin-top: 40rem;}
+}
+
+// 500px
+@media only screen and (max-width: 31.25em) {
+    .story__pictures {margin-top: 47rem;}
+}
+
+
+// 450px
+@media only screen and (max-width: 28.125em) {
+    .realtors__list {grid-template-columns: min-content max-content;}
+    .story__pictures {margin-top: 63rem;}
+
+}
+
+// 410px
+@media only screen and (max-width: 25.625em) {
+    .story__pictures {margin-top: 80rem;}
+}
