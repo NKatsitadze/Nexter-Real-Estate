@@ -295,7 +295,7 @@ body {
 .header {
   background-color: #54483A;
   grid-column: full-start/col-end 6;
-  background-image: linear-gradient(rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url(/img/hero.webp);
+  background-image: linear-gradient(rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url(../img/hero.webp);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -418,7 +418,7 @@ body {
 }
 
 .story__pictures {
-  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(/img/back.webp);
+  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.webp);
   background-color: #f9f7f6;
   grid-column: full-start/col-end 4;
   display: grid;
