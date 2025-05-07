@@ -153,8 +153,6 @@ body {
   transition: all 0.25s;
 }
 
-/*   .main-label:hover .span-label::before {top: -0.8rem;}
-   .main-label:hover .span-label::after {top: 0.8rem;} */
 .span-label {
   position: relative;
   margin-top: 2.5rem;
@@ -190,7 +188,7 @@ body {
   position: fixed;
   left: 0%;
   top: 0%;
-  height: 150vh;
+  height: 100vh;
   width: 0%;
   transition: all 0.25s;
   pointer-events: none;
@@ -204,6 +202,7 @@ body {
   top: 15%;
   transform: translate(-50%);
   list-style: none;
+  width: 90%;
 }
 
 .list-item {
@@ -269,13 +268,13 @@ body {
 }
 
 .checkbox:checked ~ .layer {
-  width: 20vw;
+  width: 25vw;
   pointer-events: auto;
   opacity: 1;
 }
 
 .checkbox:checked ~ .main-label {
-  left: 15vw;
+  left: 20vw;
 }
 
 .checkbox:checked ~ .main-label .span-label::before {
@@ -715,12 +714,20 @@ body {
     font-size: 37%;
   }
 
-  .main-label {
-    background-color: transparent;
-  }
-
   .header {
     grid-column: 1/-1;
+  }
+
+  .layer {
+    width: 100vw !important;
+  }
+
+  .checkbox:checked ~ .main-label {
+    left: 1.5rem;
+  }
+
+  .list-item {
+    font-size: 3rem;
   }
 
   .realtors {
